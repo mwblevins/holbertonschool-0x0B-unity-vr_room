@@ -5,11 +5,9 @@ using UnityEngine;
 public class PushButtonHandler : MonoBehaviour
 {
     public Animator doorAnimator;
-
-    // Attach this method to the button's OnPress event in the Unity Editor.
+//Very simple interaction for setting the Door to open. If i tried to use the button as a trigger(and use a bool) the button would no longer press
     public void OnButtonPress()
     {
-        // Trigger the "OpenDoor" animation.
         doorAnimator.SetTrigger("OpenDoor");
     }
 }
